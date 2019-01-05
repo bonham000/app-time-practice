@@ -1,0 +1,14 @@
+{
+  "name": "practice-javascript",
+  "version": "1.0.0",
+  "description": "Simple JavaScript exercises to learn with",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon src/index.js localhost 8080"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "nodemon": "1.18.4"
+  },
+  "keywords": []
+}
