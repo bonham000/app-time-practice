@@ -28,7 +28,7 @@ function testFunction() {
     if (result !== expected) {
       passed = false;
       console.error(`Test FAILED for input: ${input}`);
-      console.error(`- recevied: ${result}, expected: ${expected}\n`);
+      console.error(`- received: ${result}, expected: ${expected}\n`);
     } else {
       console.log(`Test PASSED for input: ${input}`);
     }
@@ -46,6 +46,5 @@ testFunction();
 // Solution:
 
 function multiplyByTenSolution(num) {
-  // Add code here
   return num * 10;
 }
