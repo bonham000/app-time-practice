@@ -1,16 +1,24 @@
 // INSTRUCTIONS:
 //
-// Look a lines 9 to 17. There is a function called getStringLength.
+// Below is a function called returnLongestStringSize.
 // Your job is to complete the body of this function so that it returns
-// the length of the string provided as an argument.
+// the length of the longest string, out of two arguments.
 
-// Many times in programming you will not remember the exact syntax or
-// name of the what you need to use to solve a problem. Here, try
-// Googling "find length of string in JavaScript" and see what you find!
+// For instance, returnLongestStringSize("a", "abc") should return 3
+// because "abc" is 3 letters long and longer than "a".
+
+// There are a few ways to do this. You will probably need to define a variable
+// or two, and use some conditional logic. Here are some resources to help:
+
+// Defining variables:
+// - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const
+// If..else logic:
+// - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
+// By the way, you can COMMAND+click the link in the comment to open it!
 
 // Only change code below this line
 
-function getStringLength(str) {
+function returnLongestStringSize(stringOne, stringTwo) {
   // Add code here
 }
 
@@ -19,16 +27,16 @@ function getStringLength(str) {
 // Code to test your function:
 function testFunction() {
   const TEST_CASES = [
-    { input: "a", expected: 1 },
-    { input: "apples", expected: 6 },
-    { input: "blah blah blah", expected: 14 }
+    { input: ["a", "abc"], expected: 3 },
+    { input: ["apples", "blah"], expected: 6 },
+    { input: ["blah blah blah", "bananas apples oranges"], expected: 22 }
   ];
 
   let passed = true;
 
   TEST_CASES.forEach(testCase => {
     const { input, expected } = testCase;
-    const result = getStringLength(input);
+    const result = returnLongestStringSize(...input);
     if (result !== expected) {
       passed = false;
       console.error(`Test FAILED for input: ${input}`);
@@ -46,9 +54,3 @@ function testFunction() {
 // Run the tests
 console.clear();
 testFunction();
-
-// Solution:
-
-function getStringLengthSolution(str) {
-  return str.length;
-}
